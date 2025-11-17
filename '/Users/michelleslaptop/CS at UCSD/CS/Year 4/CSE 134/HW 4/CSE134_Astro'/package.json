@@ -1,0 +1,14 @@
+{
+  "name": "users-michelleslaptop-cs-at-ucsd-cs-year-4-cse-134-hw-4-cse134-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.15.8"
+  }
+}
