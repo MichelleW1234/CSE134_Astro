@@ -1,0 +1,43 @@
+---
+const { title, summary, img, page} = Astro.props;
+---
+
+<a class="blog-card" href = {page}> 
+    <h1>{title}</h1>
+    <p>{summary}</p>
+    <img src={img}/>
+</a> 
+
+<style>
+    .blog-card {
+
+        height: 15rem;
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+
+        font-size: 0.8rem;
+        padding: 1rem;
+
+        background-color: lightblue;
+        border: 0.5rem solid blue;
+
+    }
+
+    .blog-card:hover {
+
+        background-color: blue;
+        color: lavender;
+        border: 0.5rem solid indigo;
+
+    }
+
+    img {
+
+        height: 5rem;
+        width: 5rem;
+
+    }
+</style>

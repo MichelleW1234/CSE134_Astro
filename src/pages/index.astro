@@ -1,11 +1,83 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BlogButton from '../components/BlogButton.astro';
+import BlogCard from '../components/BlogCard.astro';
+
+import catImage from "../images/cat.jpg";
+
+const blogs = [
+	{ 
+		title: "Cats",
+		summary: "This is a blog about cats. Explore the world of cats...",
+		img: catImage,
+		page: "/blog/BlogCat"
+	},
+  	{ 
+		title: "Dogs",
+		summary: "This is a blog about dogs. Explore the world of dogs...",
+		img: catImage,
+		page: "/blog/BlogDog"
+
+	},
+	{
+		title: "Birds",
+		summary: "This is a blog about birds. Explore the world of birds...",
+		img: catImage,
+		page: "/blog/BlogBird"
+	},
+	{
+		title: "Fish",
+		summary: "This is a blog about fish. Explore the world of fish...",
+		img: catImage,
+		page: "/blog/BlogFish"
+	},
+];
 ---
 
+
 <Layout>
-	<Welcome />
+	<main>
+		<h1> Select a blog to read below: </h1>
+		<div class = "blog-container">
+			{blogs.map(blog => (
+				<BlogCard
+					title = {blog.title}
+					summary = {blog.summary}
+					img = {blog.img}
+					page = {blog.page}
+				/>
+			))}
+		</div>
+	</main>
 </Layout>
+
+
+<style>
+	.blog-container {
+
+		height: 50vh;
+		width: 80vw;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		overflow-y: auto;
+		flex-wrap: wrap;
+
+		gap: 3rem;
+		padding: 3rem;
+
+		border: 0.3rem solid purple;
+
+
+		img {
+
+			border: none;
+			height: 5rem;
+    		width: 5rem;
+
+		}
+
+	}
+</style>
