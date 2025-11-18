@@ -1,14 +1,20 @@
 ---
-const {} = Astro.props;
+import LeaveButton from "./BlogLeaveButton.astro";
+
+
+const { title, date} = Astro.props;
 ---
 
-<div class = "blog-container"> 
-
+<h1>{title}</h1>
+<LeaveButton/>
+<b>{date}</b>
+<div class = "blog">
+    <slot />
 </div>
 
 <style>
 
-    .blog-container {
+    .blog {
 
         display: flex;
         flex-direction: column;

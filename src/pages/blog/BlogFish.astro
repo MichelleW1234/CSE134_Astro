@@ -1,12 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+import BlogContent from "../../components/BlogContent.astro";
 ---
 
 <Layout>
 	<main>
-		<h1> All about Fish: </h1>
-		<LeaveButton/>
-		<div class = "blog-container">
+		<BlogContent title="All about Fish" date = "November 17, 2025">
 			<h2>The Fascinating World of Fish</h2>
 			<img src = "../../images/fish1.jpeg">
 			<p>
@@ -46,7 +46,7 @@ import Layout from '../../layouts/Layout.astro';
 				Observing fish can be mesmerizing—their fluid movements, dazzling colors, and unique behaviors offer a glimpse into a world vastly different 
 				from our own. Fish remind us of the incredible adaptability of life and the beauty of the natural world beneath the water’s surface.
 			</p>
-		</div>
+		</BlogContent>
 	</main>
 </Layout>
 

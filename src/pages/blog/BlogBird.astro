@@ -1,12 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+import BlogContent from "../../components/BlogContent.astro";
 ---
 
 <Layout>
 	<main>
-		<h1> All about Birds: </h1>
-		<LeaveButton/>
-		<div class = "blog-container">
+		<BlogContent title = "All about Birds" date = "November 17, 2025">
 			<h2> The Wonder of Birds </h2>
 			<img src = "../../images/bird1.jpeg">
 			<p>
@@ -41,7 +41,7 @@ import Layout from '../../layouts/Layout.astro';
 				crucial to ecosystems, acting as pollinators, seed dispersers, and pest controllers. Conserving bird habitats ensures these benefits 
 				continue for generations.
 			</p>
-		<div>
+		</BlogContent>
 	</main>
 </Layout>
 

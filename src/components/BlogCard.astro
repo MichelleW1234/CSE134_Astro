@@ -5,7 +5,7 @@ const { title, summary, img, page} = Astro.props;
 <a class="blog-card" href = {page}> 
     <h1>{title}</h1>
     <p>{summary}</p>
-    <img src={img}/>
+    <img src={img} alt = {title}/>
 </a> 
 
 <style>
@@ -22,7 +22,10 @@ const { title, summary, img, page} = Astro.props;
         padding: 1rem;
 
         background-color: lightblue;
-        border: 0.5rem solid blue;
+        border-top: 0.2rem solid blue;
+        border-right: 0.2rem solid blue;
+        border-bottom: 0.4rem solid blue;
+        border-left: 0.4rem solid blue;
 
     }
 
@@ -30,7 +33,10 @@ const { title, summary, img, page} = Astro.props;
 
         background-color: blue;
         color: lavender;
-        border: 0.5rem solid indigo;
+        border-top: 0.2rem solid rgba(0, 0, 112);
+        border-right: 0.2rem solid rgba(0, 0, 112);
+        border-bottom: 0.4rem solid rgba(0, 0, 112);
+        border-left: 0.4rem solid rgba(0, 0, 112);
 
     }
 

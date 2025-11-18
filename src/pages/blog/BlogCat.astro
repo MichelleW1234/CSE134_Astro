@@ -1,14 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-import LeaveButton from "../../components/BlogLeaveButton.astro";
+import BlogContent from "../../components/BlogContent.astro";
 ---
 
 <Layout>
 	<main>
-		<h1> All about Cats: </h1>
-		<LeaveButton/>
-		<div class = "blog-container">
+		<BlogContent title = "All About Cats" date = "November 17, 2025">
 			<h2> Why Cats Continue to Captivate Us </h2>
 			<img src = "../../images/cat1.jpeg">
 			<p> 
@@ -40,8 +38,7 @@ import LeaveButton from "../../components/BlogLeaveButton.astro";
 
 				Indoor cats generally live longer and safer lives than outdoor cats, though outdoor access through secure enclosures or harness training can give them the best of both worlds.
 			</p>
-			
-		<div>
+		</BlogContent>
 	</main>
 </Layout>
 
