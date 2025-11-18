@@ -8,7 +8,10 @@ import BlogContent from "../../components/BlogContent.astro";
 	<main>
 		<BlogContent title = "All About Cats" date = "November 17, 2025">
 			<h2> Why Cats Continue to Captivate Us </h2>
-			<img src = "../../images/cat1.jpeg" alt = "cat one">
+			<figure>
+				<img src = "/images/cat1.jpeg" alt = "cat one">
+				<figcaption> Fixated, fearless, and fabulously feline. </figcaption>
+			</figure>
 			<p> 
 				Cats have lived alongside humans for thousands of years, yet they remain some of 
 				the most mysterious and captivating animals in our lives. Their mix of independence, 
@@ -23,7 +26,6 @@ import BlogContent from "../../components/BlogContent.astro";
 				pest control and companionship.
 			</p>
 			<h2>The Perfect Balance of Independence and Affection</h2>
-			<img src = "../../images/cat2.jpeg" alt = "cat two">
 			<p>
 				One of the reasons cats are so beloved is their balance between self-sufficiency and emotional connection. Unlike dogs, 
 				cats generally don’t rely on constant attention. They are comfortable entertaining themselves, grooming, and exploring. 
@@ -38,6 +40,10 @@ import BlogContent from "../../components/BlogContent.astro";
 
 				Indoor cats generally live longer and safer lives than outdoor cats, though outdoor access through secure enclosures or harness training can give them the best of both worlds.
 			</p>
+			<figure>
+				<img src = "../../public/images/cat2.jpg" alt = "cat two">
+				<figcaption> Curiosity in motion: every kitten’s game. </figcaption>
+			</figure>
 		</BlogContent>
 	</main>
 </Layout>

@@ -4,35 +4,30 @@ import Layout from '../layouts/Layout.astro';
 import BlogButton from '../components/BlogButton.astro';
 import BlogCard from '../components/BlogCard.astro';
 
-import catImage from "../assets/cat.jpg";
-import dogImage from "../assets/dog.jpg";
-import birdImage from "../assets/bird.jpg";
-import fishImage from "../assets/fish.jpg";
-
 const blogs = [
 	{ 
 		title: "Cats",
-		summary: "This is a blog about cats. Explore the world of cats...",
-		img: catImage,
+		summary: "Curious, playful, and endlessly charming, cats have a way of turning every home into a stage for their delightful antics.",
+		img: "../../public/images/cat.jpeg",
 		page: "/blog/BlogCat"
 	},
   	{ 
 		title: "Dogs",
-		summary: "This is a blog about dogs. Explore the world of dogs...",
-		img: catImage,
+		summary: "Loyal, energetic, and full of personality, dogs turn every walk, fetch, and cuddle into an unforgettable adventure.",
+		img: "../../public/images/dog.jpg",
 		page: "/blog/BlogDog"
 
 	},
 	{
 		title: "Birds",
-		summary: "This is a blog about birds. Explore the world of birds...",
-		img: catImage,
+		summary: "With their vibrant colors and melodious songs, birds bring a burst of life and wonder to every corner of the sky—and our homes.",
+		img: "../../public/images/bird.jpg",
 		page: "/blog/BlogBird"
 	},
 	{
 		title: "Fish",
-		summary: "This is a blog about fish. Explore the world of fish...",
-		img: catImage,
+		summary: "Graceful, mesmerizing, and endlessly fascinating, fish turn every aquarium into a world of wonder.",
+		img: "../../public/images/fish.jpg",
 		page: "/blog/BlogFish"
 	},
 ];
@@ -71,16 +66,7 @@ const blogs = [
 		gap: 3rem;
 		padding: 3rem;
 
-		border: 0.3rem solid purple;
-
-
-		img {
-
-			border: none;
-			height: 5rem;
-    		width: 5rem;
-
-		}
+		border: 0.5rem double purple;
 
 	}
 </style>

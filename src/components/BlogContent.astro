@@ -6,13 +6,19 @@ const { title, date} = Astro.props;
 ---
 
 <h1>{title}</h1>
+<b>Date: {date}</b>
 <LeaveButton/>
-<b>{date}</b>
 <div class = "blog">
     <slot />
 </div>
 
 <style>
+
+    h1 {
+
+        color: rgba(53, 0, 144, 1);
+
+    }
 
     .blog {
 
@@ -24,16 +30,38 @@ const { title, date} = Astro.props;
 
         border: 0.3rem solid purple;
 
-    }
+        h2 {
 
-    img {
+            color: rgba(86, 0, 115, 1);
 
-        height: 10rem;
-        width: 10rem;
+        }
 
-        padding: 1rem;
 
-        border: 0.3rem solid rgb(52, 0, 98);
+        figure {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            font-size: 0.8rem;
+            gap: 1rem;
+
+        }
+
+        img {
+
+            width: 30%;
+            height: auto;
+
+            padding: 1rem;
+
+            border: 0.4rem double rgba(45, 0, 142, 1);
+
+        }
+
 
     }
 

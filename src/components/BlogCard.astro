@@ -11,8 +11,8 @@ const { title, summary, img, page} = Astro.props;
 <style>
     .blog-card {
 
-        height: 15rem;
-        width: 10rem;
+        height: 22rem;
+        width: 15rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -20,30 +20,42 @@ const { title, summary, img, page} = Astro.props;
 
         font-size: 0.8rem;
         padding: 1rem;
+        gap: 1rem;
 
-        background-color: lightblue;
-        border-top: 0.2rem solid blue;
-        border-right: 0.2rem solid blue;
-        border-bottom: 0.4rem solid blue;
-        border-left: 0.4rem solid blue;
+        background-color: rgb(200, 222, 255);
+        border-top: 0.2rem solid rgba(0, 51, 179, 1);
+        border-right: 0.2rem solid rgba(0, 51, 179, 1);
+        border-bottom: 0.4rem solid rgba(0, 51, 179, 1);
+        border-left: 0.4rem solid rgba(0, 51, 179, 1);
+
+        img {
+
+            border: none;
+            width: 80%;
+            height: auto;
+
+            padding: 0.3rem;
+            border: 0.2rem solid rgba(0, 51, 179, 1);
+
+        }
 
     }
 
     .blog-card:hover {
 
-        background-color: blue;
-        color: lavender;
+        background-color: rgba(0, 70, 174, 1);
+        color: rgba(191, 217, 255, 1);
         border-top: 0.2rem solid rgba(0, 0, 112);
         border-right: 0.2rem solid rgba(0, 0, 112);
         border-bottom: 0.4rem solid rgba(0, 0, 112);
         border-left: 0.4rem solid rgba(0, 0, 112);
 
+        img {
+
+            border: 0.2rem solid rgba(191, 217, 255, 1);
+
+        }
+
     }
 
-    img {
-
-        height: 5rem;
-        width: 5rem;
-
-    }
 </style>
